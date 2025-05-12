@@ -1,0 +1,18 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  width: calc(200%); /* Double the width for seamless scrolling */
+  animation: scroll 20s linear infinite;
+}
+
+.group-hover\:animate-none:hover {
+  animation: none; /* Stops the animation on hover */
+}
